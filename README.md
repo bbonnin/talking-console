@@ -1,2 +1,3 @@
 # noisy-console
-Extension of the console with some noises 
+
+Extends the console with some noises (speech synthesis, ...).
