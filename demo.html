@@ -2,28 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Speaking console</title>
+        <title>Talking console</title>
         <link rel="stylesheet" href="https://unpkg.com/picnic">
         <style>
         ._center {
             text-align: center;
         }
         </style>
-        <script src="noisy-console.js"></script>
+        <script src="./talking-console.js"></script>
         <script>
-        function logMessage(type) {
-            const msg = document.getElementById('msg').value
-            switch (type) {
-            case 'log': console.log(msg); break
-            case 'warn': console.warn(msg); break
-            case 'error': console.error(msg); break
+            window.tconsole = new TalkingConsole({ prefixMsg: { log: '' }})
+
+            function logMessage(type) {
+                const msg = document.getElementById('msg').value
+                switch (type) {
+                case 'log': console.log(msg); break
+                case 'warn': console.warn(msg); break
+                case 'error': console.error(msg); break
+                }
             }
-        }
         </script>
     </head>
     <body>
         <div class="flex one">
-            <h1 class="_center">Speaking Console</h1>
+            <h1 class="_center">Talking Console</h1>
             <div class="half off-fourth">
                 <input id="msg" type="text" placeholder="Your message">
             </div>
@@ -34,4 +36,3 @@
             </div>
     </body>
 </html>
-
