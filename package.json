@@ -5,7 +5,7 @@
   "main": "dist/talking-console.js",
   "scripts": {
     "demo": "serve",
-    "release": "standard-version && npm run build && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
