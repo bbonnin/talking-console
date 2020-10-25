@@ -1,6 +1,6 @@
 {
   "name": "talking-console",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Override console methods to provide a console that talks",
   "main": "dist/talking-console.js",
   "scripts": {
