@@ -1,0 +1,30 @@
+{
+  "name": "talking-console",
+  "version": "0.0.2",
+  "description": "Override console methods to provide a console that talks",
+  "main": "dist/talking-console.js",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=browser bili src/talking-console.js --file-name talking-console.js --format umd --module-name talking-console --bundle-node-modules --minify --no-map",
+    "demo": "serve",
+    "release": "standard-version && npm run build && git push --follow-tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbonnin/talking-console.git"
+  },
+  "keywords": [
+    "javascript",
+    "console",
+    "speech"
+  ],
+  "author": "Bruno Bonnin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbonnin/talking-console/issues"
+  },
+  "homepage": "https://github.com/bbonnin/talking-console#readme",
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "standard-version": "^9.0.0"
+  }
+}
