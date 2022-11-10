@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/bbonnin/talking-console#readme",
   "devDependencies": {
-    "serve": "^11.3.2",
+    "serve": "^14.1.1",
     "standard-version": "^9.0.0"
   }
 }
